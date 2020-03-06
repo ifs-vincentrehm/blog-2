@@ -13,7 +13,7 @@
         "schema": "public"
       },
       "options": {
-        "debug": false
+        "debug": true
       },
       "pool": { "min": 0, "max": 1 }
     }
