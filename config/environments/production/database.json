@@ -9,9 +9,13 @@
         "port": "${process.env.POSTGRESQL_ADDON_PORT}",
         "database": "${process.env.POSTGRESQL_ADDON_DB}",
         "username": "${process.env.POSTGRESQL_ADDON_USER}",
-        "password": "${process.env.POSTGRESQL_ADDON_PASSWORD}"
+        "password": "${process.env.POSTGRESQL_ADDON_PASSWORD}",
+        "schema": "public"
       },
-      "options": {}
+      "options": {
+        "debug": true
+      },
+      "pool": { "min": 0, "max": 5 }
     }
   }
 }
