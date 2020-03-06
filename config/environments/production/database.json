@@ -13,9 +13,9 @@
         "schema": "public"
       },
       "options": {
-        "debug": true
+        "debug": false
       },
-      "pool": { "min": 0, "max": 2 }
+      "pool": { "min": 0, "max": 1 }
     }
   }
 }
