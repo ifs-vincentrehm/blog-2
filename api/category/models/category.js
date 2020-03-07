@@ -10,9 +10,9 @@ module.exports = {
   // Fired before an `insert` or `update` query.
   beforeSave: async (model, attrs, options) => {
     if (options.method === 'insert' && attrs.name) {
-      model.set('slug', slugify(attrs.name));
+      model.set('slug', slugify(attrs.name, { lower: true }));
     } else if (options.method === 'update' && attrs.name) {
-      attrs.slug = slugify(attrs.name);
+      attrs.slug = slugify(attrs.name, { lower: true });
     }
   },
 
